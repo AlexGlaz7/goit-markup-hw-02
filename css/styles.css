@@ -13,14 +13,26 @@
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-color);
-  font-weight: 500;
+  font-weight: 400;
 }
 .header-logo,
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -39,8 +51,8 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--primary-color);
   text-decoration: none;
+  color: var(--primary-color);
 }
 .header-list-nav .header-link.current {
   color: var(--accent-color);
@@ -93,10 +105,8 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-color);
 }
 .peculiarities-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -110,10 +120,8 @@ body {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--primary-color);
 }
 .workers-description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -126,15 +134,12 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-color);
 }
 .footer {
   background: var(--background-color);
 }
 .footer-link-add {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -142,9 +147,7 @@ body {
   text-decoration: none;
 }
 .footer-link {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -167,22 +170,18 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-color);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--accent-color);
 }
-
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-color);
 }
 .portfolio-description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
